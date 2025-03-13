@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(135deg, #2a4d69, #4b86b4);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.menu a {
+    margin-left: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    color: #adcbe3;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+    padding: 100px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#home {
+    background: linear-gradient(135deg, #e7eff6, #adcbe3);
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    color: #2a4d69;
+    margin-bottom: 20px;
+}
+
+#home h1 span {
+    color: #e63946;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.1);
+}
+
+.personal-info {
+    margin-top: 20px;
+}
+
+.personal-info h3 {
+    font-size: 2rem;
+    color: #2a4d69;
+    margin-bottom: 10px;
+}
+
+.personal-info p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.personal-info a {
+    color: #4b86b4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.personal-info a:hover {
+    color: #e63946;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    font-size: 1.1rem;
+    color: #4b86b4;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e63946;
+    transform: translateY(-3px);
+}
+
+/* About */
+#about {
+    background: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #2a4d69;
+    margin-bottom: 30px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#about span {
+    color: #e63946;
+    font-weight: 600;
+}
+
+#about strong {
+    color: #4b86b4;
+}
+
+/* Skills */
+#skills {
+    background: linear-gradient(135deg, #e7eff6, #adcbe3);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-card {
+    background: #4b86b4;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-card:hover {
+    background: #e63946;
+    transform: translateY(-10px);
+}
+
+/* Contact */
+#contact {
+    background: #fff;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #adcbe3;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #e63946;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background: #2a4d69;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #e63946;
+}
+
+/* Footer */
+footer {
+    background: #2a4d69;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #adcbe3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e63946;
+}

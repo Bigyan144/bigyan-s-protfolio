@@ -1,93 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapps.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <title>Bigyan's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigyan Bhandari - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="container">
-            <div class="logo">Bigyan's Portfolio</div>
-            <div class="menu">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="section fade-in">
-        <div class="container">
-            <h1>Welcome to <span>My Portfolio</span></h1>
-            <div class="profile-photo">
-                <img src="curly curly kapal.jpg" alt="Profile Photo">
+    <section id="home">
+        <h1 class="animated-text">Bigyan Bhandari</h1>
+        <img src="https://via.placeholder.com/200" alt="Bigyan Bhandari" class="profile-photo">
+        <p class="welcome-message">Welcome to my digital portfolio where I showcase my journey as a developer</p>
+        <p class="tagline">Beginner Developer, Tech Explorer, Bibliophile</p>
+    </section>
+
+    <section id="about">
+        <div class="glass-card">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hello! I'm Bigyan Bhandari, a passionate learner from Pyuthan, Lumbini Province, Nepal.</p>
+                <p>I'm on an exciting journey to explore the world of technology and programming. Currently, I'm honing my skills in web development with HTML, CSS, and JavaScript, while also expanding my knowledge to languages like C, C#, and Python.</p>
+                <p>When I'm not coding, you can find me immersed in books, exploring new ideas and perspectives. I believe in continuous learning and growth, both as a developer and as an individual.</p>
+                <p>This portfolio represents my progress, projects, and thoughts as I navigate through the fascinating world of technology.</p>
             </div>
-            <div class="personal-info">
-                <h3>Bigyan Bhandari</h3>
-                <p>Email: <a href="mailto:bigyanforreal@gmail.com">bigyanforreal@gmail.com</a></p>
-                <div class="social-links">
-                    <a href="https://x.com/bigyan_m10?t=mdEAky9dLfBkscT1_lcluw&s=09" target="_blank">Twitter</a>
-                    <a href="https://www.facebook.com/share/1HXkQgSEcF/" target="_blank">Facebook</a>
-                    <a href="https://www.instagram.com/bigyan_m10/profilecard/?igsh=cXNmaHd4dmsxdzN6" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Semantic markup and modern structure</p>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="90"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Styling, animations and responsive design</p>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="85"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Interactive web experiences</p>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="75"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>C</h3>
+                <p>Fundamentals and algorithms</p>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="60"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-microsoft"></i>
+                <h3>C#</h3>
+                <p>Learning object-oriented concepts</p>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="50"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>Scripting and automation</p>
+                <div class="skill-level">
+                    <div class="skill-progress" data-level="65"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="section fade-in">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Bigyan, a passionate <span>beginner developer</span> skilled in 
-                <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. 
-                I'm currently exploring <strong>C</strong>, <strong>C#</strong>, and <strong>Python</strong>, 
-                eager to grow and tackle exciting projects! <br> I can't control the waves but learn how to serf.
-            </p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section fade-in">
-        <div class="container">
-            <h2>Learning..</h2>
-            <div class="skills-grid">
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">C</div>
-                <div class="skill-card">C#</div>
-                <div class="skill-card">Python</div>
+    <section id="blog">
+        <h2>My Blog</h2>
+        <div class="blog-container">
+            <div class="blog-post">
+                <h3>My Journey into Programming</h3>
+                <div class="date">June 15, 2023</div>
+                <div class="content">
+                    <p>Starting my programming journey was both exciting and overwhelming. Coming from a small town in Nepal, resources were limited, but my curiosity was boundless...</p>
+                    <div class="full-content">
+                        <p>I remember the first time I wrote a simple HTML page. It was just a heading and a paragraph, but seeing it render in the browser felt like magic. That moment sparked something in me.</p>
+                        <p>As I progressed, I discovered CSS and JavaScript, and suddenly my static pages came to life. The more I learned, the more I realized how much there was to learn. This paradox was both humbling and motivating.</p>
+                        <p>Transitioning to languages like C and Python opened new ways of thinking about problems. The structured approach of C contrasted beautifully with Python's flexibility, showing me that programming languages are tools, each with its own strengths.</p>
+                        <p>What keeps me going is the joy of solving problems and creating things that didn't exist before. Every bug fixed, every feature implemented, is a small victory in this endless journey of learning.</p>
+                    </div>
+                    <p class="read-more">Read more...</p>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section fade-in">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +9779817531697</p>
+            <p><i class="fas fa-envelope"></i> bigyanforreal@gmail.com</p>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>Phone & WhatsApp: <a href="tel:+9779817531697">9817531697</a></p>
-            <p>Influenced by: Er. Himal Bhandari</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
